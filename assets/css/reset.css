@@ -1,0 +1,46 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+input,
+area,
+select,
+button {
+	outline: none;
+	font-size: 14px;
+}
+
+input {
+	line-height: normal;
+}
+
+label,
+button {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
