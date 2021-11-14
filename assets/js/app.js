@@ -11,6 +11,20 @@ $(document).ready(function () {
 		nav: false,
 		dots: false,
 		loop: true,
+		responsive: {
+			320: {
+				items: 2,
+			},
+			640: {
+				items: 3,
+			},
+			768: {
+				items: 4,
+			},
+			1024: {
+				items: 6,
+			},
+		},
 	});
 
 	window.addEventListener("scroll", function () {
@@ -20,5 +34,24 @@ $(document).ready(function () {
 		} else {
 			header.classList.remove("fixed");
 		}
+	});
+
+	const menu = document.querySelector(".menu");
+	const menuToggle = document.querySelector(".menu-toggle");
+	const submenu = document.querySelectorAll(".hasSubmenu");
+
+	menuToggle.addEventListener("click", function () {
+		menuToggle.classList.toggle("active");
+		menu.classList.toggle("active");
+		if (!menuToggle.classList.contains("active")) {
+			submenu.forEach((el) => el.classList.remove("show"));
+		}
+	});
+
+	submenu.forEach((el) => {
+		el.addEventListener("click", function (e) {
+			submenu.forEach((el) => el.classList.remove("show"));
+			e.target.classList.toggle("show");
+		});
 	});
 });

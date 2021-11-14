@@ -1,0 +1,288 @@
+@media screen and (max-width: 1279px) {
+	/* .banner-image img {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	} */
+	.brand-image {
+		width: 140px;
+	}
+
+	.trending-container {
+		gap: 0 5rem;
+	}
+
+	.trending-content {
+		width: 45%;
+	}
+	.trending-image {
+		width: 55%;
+	}
+
+	.pricing {
+		padding-top: 20rem;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	/* .btn {
+		padding: 1rem 2.5rem;
+	}
+	.menu {
+		gap: 0 2.5rem;
+	}
+*/
+	.banner {
+		padding-bottom: 10rem;
+	}
+
+	.pricing-footer {
+		padding: 3rem 4rem 3.5rem;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/* Header */
+	.header {
+		padding: 1rem 0;
+	}
+
+	.header.fixed .menu-link {
+		line-height: 4rem;
+	}
+
+	.menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+		overflow: hidden;
+		flex-direction: column;
+		background: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%);
+		z-index: 4;
+		/* transform: translateX(-100%); */
+		transition: all 0.4s ease;
+	}
+
+	.menu.active {
+		opacity: 1;
+		visibility: visible;
+		overflow-y: scroll;
+		max-height: 25rem;
+		/* transform: translateX(0); */
+		box-shadow: 0px 6px 20px 0px rgba(100, 100, 111, 0.25);
+	}
+
+	.menu-item {
+		width: 100%;
+		padding: 0 1.5rem;
+	}
+
+	.menu-item:not(:last-of-type) {
+		border-bottom: 1px solid #ededed33;
+	}
+
+	.menu-link {
+		display: block;
+		line-height: 4rem;
+		color: #fff;
+	}
+
+	.menu-item.hasSubmenu .menu-link {
+		display: inline-block;
+	}
+
+	/* .menu-item:not(:last-of-type) .menu-link {
+		border-bottom: 1px solid #ededed33;
+	} */
+
+	.menu-item.active .menu-link {
+		color: var(--secondary-color);
+	}
+
+	.menu-item:hover .menu-link {
+		color: black;
+	}
+
+	.dropdown-menu {
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+		position: unset;
+		box-shadow: none;
+	}
+
+	.dropdown-link {
+		padding: 0.8rem 2.5rem;
+	}
+
+	.hasSubmenu.show .dropdown-menu {
+		display: block;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.dropdown-item:hover .dropdown-link {
+		color: var(--black);
+	}
+
+	.menu-btn {
+		display: none;
+	}
+
+	.menu-toggle {
+		display: block;
+	}
+
+	.menu-toggle .line {
+		display: block;
+		width: 25px;
+		height: 3px;
+		background: #000;
+		margin: 4px;
+		transition: all 0.4s ease;
+	}
+
+	.menu-toggle.active .line1 {
+		transform: rotate(-45deg) translate(-5px, 7px);
+	}
+
+	.menu-toggle.active .line2 {
+		opacity: 0;
+	}
+
+	.menu-toggle.active .line3 {
+		transform: rotate(45deg) translate(-3.5px, -5px);
+	}
+	/* End of Header */
+
+	/* Banner */
+	.banner-container {
+		padding: 7rem 0 10rem 0;
+	}
+
+	.banner-image {
+		display: none;
+	}
+
+	.banner-link {
+		display: none;
+	}
+	/* End of Banner */
+
+	/* Feature */
+	.feature-image {
+		display: none;
+	}
+
+	.feature-content {
+		width: 100%;
+		margin: 0;
+	}
+	/* End of Feature */
+
+	/* Trending */
+	.trending {
+		background: var(--light-purple);
+	}
+	.category {
+		gap: 0 2rem;
+	}
+	.category-item {
+		min-width: 11rem;
+	}
+
+	.category-link h6 {
+		font-size: 1.2rem;
+	}
+	.trending-container {
+		flex-direction: column;
+		gap: 5rem 0;
+	}
+
+	.trending-content,
+	.trending-image {
+		width: 100%;
+	}
+	/* End of Trending */
+
+	/* Specification */
+	.border-line,
+	.shape {
+		display: none;
+	}
+
+	.specification-container {
+		flex-direction: column;
+		gap: 5rem 0;
+	}
+
+	.specification-container:nth-child(even) {
+		flex-direction: column-reverse;
+	}
+
+	.specification-content,
+	.specification-image {
+		width: 100%;
+		margin-left: 0;
+	}
+	/* End of Specification */
+
+	/* Pricing */
+	.pricing {
+		background: var(--light-purple);
+		padding-bottom: 8rem;
+	}
+	.pricing-list {
+		flex-direction: column;
+		gap: 3rem 0;
+	}
+
+	.pricing-item {
+		width: 100%;
+	}
+
+	.pricing-footer {
+		padding: 3.5rem 6rem 4rem;
+	}
+	/* End of Pricing */
+
+	/* Footer */
+	.footer {
+		background: var(--light-purple);
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+
+	.footer-container {
+		flex-direction: column;
+		gap: 3rem 0;
+	}
+
+	.footer-column {
+		width: 100% !important;
+	}
+
+	.footer-title {
+		margin-bottom: 2rem;
+	}
+	/* End of Footer */
+}
+@media screen and (max-width: 320px) {
+	/* Trending */
+	.category {
+		gap: 0 1.5rem;
+	}
+
+	.category-item {
+		min-width: 9rem;
+	}
+
+	.category-link h6 {
+		font-size: 1rem;
+	}
+
+	/* End of Trending */
+}

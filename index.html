@@ -29,7 +29,9 @@
 			referrerpolicy="no-referrer"
 		/>
 
+		<link rel="stylesheet" href="./assets/css/base.css" />
 		<link rel="stylesheet" href="./assets/css/app.css" />
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
 	</head>
 	<body>
 		<div class="wrapper">
@@ -50,7 +52,7 @@
 							<li class="menu-item">
 								<a href="#" class="menu-link">Pricing</a>
 							</li>
-							<li class="menu-item">
+							<li class="menu-item hasSubmenu">
 								<a href="#" class="menu-link">Page</a>
 								<ul class="dropdown-menu">
 									<li class="dropdown-item">
@@ -58,7 +60,7 @@
 									</li>
 								</ul>
 							</li>
-							<li class="menu-item">
+							<li class="menu-item hasSubmenu">
 								<a href="#" class="menu-link">Blog</a>
 								<ul class="dropdown-menu">
 									<li class="dropdown-item">
@@ -73,7 +75,12 @@
 								<a href="#" class="menu-link">Contact</a>
 							</li>
 						</ul>
-						<a href="#" class="btn btn--filled">Free trial</a>
+						<div class="menu-toggle">
+							<span class="line line1"></span>
+							<span class="line line2"></span>
+							<span class="line line3"></span>
+						</div>
+						<a href="#" class="btn btn--filled menu-btn">Free trial</a>
 					</div>
 				</div>
 			</header>
@@ -95,7 +102,7 @@
 									magna aliqua. Ut enim ad minim. sed do eiusmod tempor incididunt.
 								</p>
 								<div class="banner-items">
-									<a href="#" class="btn btn--primary">Get started</a>
+									<a href="#" class="btn btn--primary banner-link">Get started</a>
 									<span class="play-btn"><i class="bx bx-play"></i></span>
 									<span class="play-title">watch the video</span>
 								</div>
@@ -434,7 +441,8 @@
 									your skills.
 								</p>
 								<p class="footer-copyright">
-									Copyright &copy;2021 All rights reserved | This template is made with ❤️ by <a href="#">Colorlib</a>
+									Copyright &copy;2021 All rights reserved | This template is made with ❤️ by
+									<a href="#" style="color: var(--primary-color)">Colorlib</a>
 								</p>
 							</div>
 							<div class="footer-column">
