@@ -50,8 +50,10 @@ $(document).ready(function () {
 
 	submenu.forEach((el) => {
 		el.addEventListener("click", function (e) {
-			submenu.forEach((el) => el.classList.remove("show"));
 			e.target.classList.toggle("show");
+			submenu.forEach((item) => {
+				el !== item && item.classList.remove("show");
+			});
 		});
 	});
 });
