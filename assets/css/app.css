@@ -97,7 +97,7 @@
 
 /* Banner */
 .banner {
-	background: url(../images/banner-bg.webp) no-repeat right center / cover;
+	background: url(../images/banner-bg.png) no-repeat right center / cover;
 	z-index: 1;
 }
 
@@ -396,7 +396,7 @@
 
 /* Pricing */
 .pricing {
-	background: url(../images/pricing-bg.webp) no-repeat center / cover;
+	background: url(../images/pricing-bg.png) no-repeat center / cover;
 	margin-top: 12rem;
 	padding-top: 29rem;
 	padding-bottom: 12rem;
@@ -556,7 +556,7 @@
 
 /* Impressive */
 .impressive {
-	background: url(../images/impress-bg.webp) no-repeat center / cover;
+	background: url(../images/impress-bg.png) no-repeat center / cover;
 	padding: 29rem 0 32rem;
 	margin-top: 12rem;
 }
@@ -598,7 +598,7 @@
 
 /* Footer */
 .footer {
-	background: url(../images/footer-bg.webp) no-repeat center / cover;
+	background: url(../images/footer-bg.png) no-repeat center / cover;
 	margin-top: -20rem;
 	padding-top: 29rem;
 	padding-bottom: 12rem;
