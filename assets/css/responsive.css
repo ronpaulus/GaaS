@@ -269,7 +269,7 @@
 	}
 	/* End of Footer */
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
 	/* Trending */
 	.category {
 		gap: 0 1.5rem;
